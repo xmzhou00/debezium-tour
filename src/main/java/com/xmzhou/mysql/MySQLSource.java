@@ -25,7 +25,7 @@ public class MySQLSource {
         props.setProperty("database.hostname", "localhost");
         props.setProperty("database.port", "3306");
         props.setProperty("database.user", "root");
-        props.setProperty("database.password", "123456");
+        props.setProperty("database.password", "root");
         props.setProperty("database.server.id", "85745");
         props.setProperty("database.include.list", "test");
         props.setProperty("table.include.list", "test.user");
@@ -34,6 +34,7 @@ public class MySQLSource {
                 "io.debezium.storage.file.history.FileSchemaHistory");
         props.setProperty("schema.history.internal.file.filename",
                 "schemahistory.txt");
+//        props.setProperty("database.connectionTimeZone","");
 
 // Create the engine with this configuration ...
         try (DebeziumEngine<ChangeEvent<String, String>> engine = DebeziumEngine.create(Json.class)
