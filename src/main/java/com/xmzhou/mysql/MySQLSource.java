@@ -34,7 +34,7 @@ public class MySQLSource {
                 "io.debezium.storage.file.history.FileSchemaHistory");
         props.setProperty("schema.history.internal.file.filename",
                 "schemahistory.txt");
-//        props.setProperty("database.connectionTimeZone","");
+        props.setProperty("database.connectionTimeZone","");
 
 // Create the engine with this configuration ...
         try (DebeziumEngine<ChangeEvent<String, String>> engine = DebeziumEngine.create(Json.class)

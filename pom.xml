@@ -32,11 +32,20 @@
       <version>${debezium.version}</version>
     </dependency>
 
-   <!-- <dependency>
+    <!-- https://mvnrepository.com/artifact/io.debezium/debezium-connector-postgres -->
+    <dependency>
+      <groupId>io.debezium</groupId>
+      <artifactId>debezium-connector-postgres</artifactId>
+      <version>${debezium.version}</version>
+    </dependency>
+
+
+    <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.2.12</version>
-    </dependency>-->
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
